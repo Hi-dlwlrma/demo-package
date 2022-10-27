@@ -58,7 +58,7 @@ setup(
     # The url field should contain a link to a git repository, the project's website
     # or the project's documentation. I'll leave a link to this project's Github repository.
     # This field is OPTIONAL
-    url="https://github.com/arnu515/pydash",
+    # url="https://github.com/arnu515/pydash",
 
     # The author name and email fields are self explanatory.
     # These fields are OPTIONAL
