@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="new_library_package",
-    version="3.0.0",
+    version="3.0.1",
     author_name="dungntn",
     author_email="dungntn@gmail.com",
     description="Demo for release package",
