@@ -40,4 +40,4 @@ jobs:
           python3 -m twine upload dist/*
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.pypi-AgEIcHlwaS5vcmcCJGVhNTdmYjE3LWNmZjAtNDFiZS05NDMwLWE3ZjFhYjJiZTc0ZAACG1sxLFsibmV3LWxpYnJhcnktcGFja2FnZSJdXQACLFsyLFsiNzYzMjIxMTItZWQ5Ni00OTY0LTk1ZTktM2U5ZjhkMzNjMjU5Il1dAAAGIBM5N1RfC3XzuJrMYAdARefGX2oNc3ewEQIoU51BDwKt }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_TOKEN }}
