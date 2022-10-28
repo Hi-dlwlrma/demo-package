@@ -24,14 +24,14 @@ jobs:
         --user
         
     - name: Build a binary wheel and a source tarball
-      run: |
-        python setup.py sdist bdist_wheel
-#         build
-#         --sdist
-#         --wheel
-#         --outdir dist/
+      run: >-
+        python -m
+        build
+        --sdist
+        --wheel
+        --outdir dist/
     - name: Upload to PyPI
-      run: |
+      run: >-
         python -m twine upload dist/*
         
     - name: Publish distribution 📦 to PyPI
