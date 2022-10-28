@@ -5,21 +5,16 @@ name: "Release package"
 
 on:
   push:
-    branches: [ main ]
   workflow_dispatch:
-    inputs:
-      command:
-        description: "The command to run"
-        required: true
 
 jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@main
+      - uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.9
           
       - name: "Installs dependencies"
         run: |
@@ -31,5 +26,5 @@ jobs:
           python3 setup.py sdist bdist_wheel
           python3 -m twine upload dist/*
         env:
-          TWINE_USERNAME: dungntn
+          TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.TWINE_TEST_TOKEN }}
